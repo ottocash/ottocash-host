@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">OttoCash</string>
+    <string name="aktivasi_akun">Aktivasi Akun</string>
+    <string name="desc_activation">Aktivasi Akun 081 6*** *4423 OttoCash Kamu di iLotte ?</string>
+    <string name="call_cs_ilotte">Apabila Anda ingin menghubungkan akun Ottocash Anda dengan akun iLotte silahkan klik tombol Aktifkan</string>
+    <string name="privasi">Saya telah setuju dengan syarat dan ketentuan yang berlaku.</string>
+    <string name="aktifkan">Aktifkan</string>
+    <string name="aktivasi_berhasil">Aktivasi Berhasil</string>
+    <string name="akun_berhasil_di_aktifkan">Akun Berhasil di Aktifkan</string>
+    <string name="hai">Hai somebody, Aktivasi akun OttoCash kamu sudah berhasil. Nikmati kemudahan bertransaksi dengan OttoCash di iLotte!!</string>
+    <string name="mengerti">Mengerti</string>
+    <string name="registrasi_ottocash">Registrasi OttoCash</string>
+    <string name="hi_somebody">Hi Somebody,</string>
+    <string name="question_account">Kamu belum memiliki akun di OttoCash. Isi data dibawah dengan lengkap dan benar dan langsung aktifkan akun OttoCash kamu.</string>
+    <string name="no_hp">No Hp</string>
+    <string name="hp">0812 8**** *123</string>
+    <string name="jika_ini_bukan"><![CDATA[Jika ini bukan nomor kamu, segera kembali & perbaiki data kamu di iLotte]]></string>
+    <string name="nama_sesuai_ktp">Nama Sesuai KTP</string>
+    <string name="email_aktif">Email Aktif</string>
+    <string name="set_pin_ottocash">Set Pin OttoCash</string>
+    <string name="set_pin_kamu">Set PIN Kamu</string>
+    <string name="set_pin">Set pin kamu untuk kemudahan bertransaksi di iLotte menggunakan OttoCash</string>
+    <string name="pin_ottocash">PIN Ottocash</string>
+    <string name="konfrimasi_pin_ottocash">Konfrimasi PIN OttoCash</string>
+    <string name="selesai">Selesai</string>
+    <string name="otentifikasi_akun">Otentifikasi Akun</string>
+    <string name="masukkan_6_digit_kode_otp">Masukkan 6 Digit Kode OTP</string>
+    <string name="_6_digit_kode_otp">6 Digit kode OTP telah dikirimkan ke nomor 0812 xxxx xx23, Silahkan cek HP Anda</string>
+    <string name="tidak_menerima">Tidak menerima kode verifikasi ? Anda bisa mencoba meminta OTP lagi setelah waktu habis</string>
+    <string name="register_success">Register Berhasil</string>
+    <string name="register_akun_berhasil">Register Akun Berhasil</string>
+    <string name="review_paymment">Review Paymment</string>
+    <string name="silahkan_masukkan">Silahkan masukkan 6 digit Ottocash kamu untuk membayar transaksi ini menggunakan OttoCash</string>
+    <string name="masukkan_pin">Masukkan PIN Ottocash Kamu</string>
+    <string name="check_out_berhasil">Check Out Berhasil</string>
+    <string name="cek_status_barang">Cek Status Barang</string>
+    <string name="barang_kamu">Barang kamu akan segera kami kirim, harap bersabar. Anda bisa mengecek status barang Anda pada halaman MyiLotte atau klik tombol dibawah</string>
+    <string name="ottocash_plush">OttoCash Plush</string>
+    <string name="saldo_ottocash">Saldo OttoCash</string>
+    <string name="rp_388_000">Rp 388.000</string>
+    <string name="bayar">Bayar</string>
+
+    <string name="atm">1. Datang ke mesin ATM, masukkan kartu dan PIN ATM Kamu\n2. Pilih menu transfer\n3. Pilih transfer ke bank lain\n4. Masukkan kode Bank Ina Perdana (513)\n5. Masukkan nomor virtual account Kamu : 9905508123456789\n6. Masukkan nominal yang diinginkan\n7. Konfirmasi transaksi telah berhasil.</string>
+    <string name="mbanking">1. Buka internet/mobile banking\n2. Pilih menu transfer antar Bank/Bank lain\n3. Pilih Bank Ina Perdana sebagai bank tujuan transfer\n4. Pilih menu transfer online antar Bank / Bank lain\n5. Masukkan nomor virtual account Kamu : 9905508123456789\n6. Masukkan nominal yang diinginkan\n7. Konfirmasi transaksi telah berhasil.</string>
+    <string name="pembayaran_kamu_ke_toko">Pembayaran kamu ke Toko Ucok tidak berhasil kami proses, mohon mengulang proses pembayaran kembali</string>
+    <string name="melalui_mbanking"><![CDATA[MELALUI INTERNET BANKING & MOBILE BANKING]]></string>
+</resources>
