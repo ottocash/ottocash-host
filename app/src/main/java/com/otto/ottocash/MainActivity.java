@@ -53,11 +53,12 @@ public class MainActivity extends BaseActivity {
         if (getIntent().getExtras() != null) {
             Bundle extras = getIntent().getExtras();
             emoney = extras.getString(KEY_EMONEY);
-            tvSaldoOttoCash.setText(emoney);
+            tvSaldoOttoCash.setText(UiUtil.formatMoneyIDR(Long.parseLong(emoney)));
             lyWidgetSdk.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                    intent.putExtra("PACKAGE_NAME", package_name);
                     MainActivity.this.startActivity(intent);
                 }
             });
