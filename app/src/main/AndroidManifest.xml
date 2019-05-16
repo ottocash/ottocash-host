@@ -13,6 +13,7 @@
         android:roundIcon="@mipmap/ic_otto_cash"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
+        <activity android:name=".DashboardAppActivity"></activity>
         <activity android:name=".CheckOutActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -26,4 +27,5 @@
             android:name="io.fabric.ApiKey"
             android:value="d5c708c2d660429c1483e5fe3cc04a0668139201" />
     </application>
+
 </manifest>

@@ -7,15 +7,16 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.otto.sdk.IConfig;
 import com.otto.sdk.model.api.response.InquiryResponse;
-import com.otto.sdk.view.activities.account.activation.ActivationActivity;
+import com.otto.sdk.support.UiUtil;
 import com.otto.sdk.view.activities.features.payment.ReviewCheckoutActivity;
 
 import app.beelabs.com.codebase.base.BaseActivity;
+import app.beelabs.com.codebase.support.util.CacheUtil;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -25,25 +26,18 @@ public class CheckOutActivity extends BaseActivity {
     private boolean isFormValidationSuccess = false;
     private InquiryResponse data;
 
-
     private String emoney;
-
 
     @BindView(R.id.PaymentOttoCash)
     LinearLayout PaymentOttoCash;
+
     @BindView(R.id.tvSaldoOttoCash)
     TextView tvSaldoOttoCash;
+
     @BindView(R.id.edtSubTotal)
     EditText edtSubTotal;
     @BindView(R.id.tvGrandTotal)
     TextView tvGrandTotal;
-    @BindView(R.id.ivBack)
-    ImageView ivBack;
-    @BindView(R.id.lyWidgetSdk)
-    LinearLayout lyWidgetSdk;
-
-    private String money;
-    private String KEY_MONEY = "MONEY";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,39 +71,11 @@ public class CheckOutActivity extends BaseActivity {
                 }
             }
         });
-
-        ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
     }
 
     private void initContent() {
-
-        if (getIntent().getExtras() != null) {
-            Bundle extras = getIntent().getExtras();
-            money = extras.getString(KEY_MONEY);
-            tvSaldoOttoCash.setText(UiUtil.formatMoneyIDR(Long.parseLong(money)));
-            lyWidgetSdk.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String grandTotal = edtSubTotal.getText().toString();
-                    Intent intent = new Intent(CheckOutActivity.this, ReviewCheckoutActivity.class);
-                    intent.putExtra(SESSION_GRAND_TOTAL, grandTotal);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    CheckOutActivity.this.startActivity(intent);
-                }
-            });
-        } else {
-            Intent intent = new Intent(CheckOutActivity.this, ActivationActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            CheckOutActivity.this.startActivity(intent);
-        }
-
-//        String emoney = String.valueOf(CacheUtil.getPreferenceInteger(IConfig.SESSION_EMONEY_BALANCE, CheckOutActivity.this));
-//        tvSaldoOttoCash.setText(UiUtil.formatMoneyIDR(Long.parseLong(emoney)));
+        String emoney = String.valueOf(CacheUtil.getPreferenceInteger(IConfig.SESSION_EMONEY_BALANCE, CheckOutActivity.this));
+        tvSaldoOttoCash.setText(UiUtil.formatMoneyIDR(Long.parseLong(emoney)));
     }
 
     public void addTextWatcher(EditText input) {

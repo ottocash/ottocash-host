@@ -80,5 +80,6 @@ dependencies {
 
     //implementation project(path: ':sdk')
     //implementation 'com.github.ard31:ottocash:0.1.0'
-    implementation 'com.github.ottocash:ottocash-sdk:0.1.0'
+    //implementation 'com.github.ottocash:ottocash-sdk:0.1.0'
+    implementation 'com.github.ottocash:ottocash-sdk:1.0.0'
 }
